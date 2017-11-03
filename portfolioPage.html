@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<style>
+.navbarBg {
+    background-image:url(https://www.photohdx.com/images/2016/03/green-grunge-fabric-texture.jpg);
+}
+footer { 
+    display: block;
+    background-image:url(https://www.photohdx.com/images/2016/03/green-grunge-fabric-texture.jpg);
+    color:white;
+}
+footer a {
+    color:#bc9a5c;
+}
+footer a:hover {
+    color:white;
+    outline-style: solid;
+    outline-color: white;
+}
+@keyframes li{
+    0%   {background-color: #008853;}
+    25%  {background-color: #AA4641;}
+    50%  {background-color: #2A3236;}
+    100% {background-color: #008853;}
+}
+ li {
+    background-color: black;
+    animation-name: li;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.nav {
+  position:relative;
+  display:inline-block;
+  font-size:14px;
+  font-weight:900;
+}
+.nav-item a {
+  display:block;
+  padding:15px 20px;
+  color: white;
+}
+.nav-item:first-child a {
+  border-radius:5px 0 0 5px;
+}
+.nav-item:last-child a {
+  border-radius:0 5px 5px 0;
+}
+.nav-item a:hover {
+  color: white;
+  background-image: url(http://thumb10.shutterstock.com/thumb_large/496018/134513657/stock-photo-basketball-texture-134513657.jpg);
+}
+li {
+     text-align: center;
+     border-style: solid;
+     border-color: white;
+     border-width: 1px;
+     border-radius:3px 3px 3px 3px;
+}
+</style>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
+<nav class=" nav navbar navbar-expand-sm navbarBg navbar-dark fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sean's Portfolio</a>
+          </div>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active"><a class="nav-link" href="#Section1">Section 1</a></li>
+    <li class="nav-item"> <a class="nav-link" href="#Section2">Section 2</a> </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#Section3" id="navbar-drop" data-toggle="dropdown">Section 3</a>
+       <div class="dropdown-menu">
+        <a class="dropdown-item" href="#Section3-a">Section 3-a</a>
+        <a class="dropdown-item" href="#Section3-b">Section 3-b</a>
+        <a class="dropdown-item" href="#Section3-c">Section 3-c</a>
+       </div>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item"><a href="https://twitter.com/SeanCahill25?lang=en"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/sean-cahill-5729b385/"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+  </ul>
+      </div>
+</nav>
+    <div id="Section1" style="height:500px;background-color: tan;width:25%; margin-top:80px">
+        <h1>Section 1</h1>
+        <p>This is my Section 1 text.</p>
+    </div>
+    <div id="Section2" style="height: 500px;background-color: orange;width:50%">
+        <h2>Section 2</h2>
+        <p>This is my Section 2 text.</p>
+    </div>
+    <div style="height: 600px; background-color: pink; width: 75%">
+        <h3 id="Section3-a" style="height: 100px">Section 3-a</h3>
+        <p>This is my Section 3 text.</p>
+        <h4 id="Section3-b" style="height: 100px">Section 3-b</h4>
+        <p>This is my Section 3-b text.</p>
+        <h5 id="Section3-c" style="height: 100px">Section 3-c</h5>
+        <p>This is my Section 3-c text.</p>
+    </div>
+</body>
+    <footer>
+      <p>Posted by: Sean Cahill</p>
+      <p>Contact information: <a href="mailto:seancahill25@gmail.com">seancahill25@gmail.com</a>.</p>
+      <a href="#top">^Back to top of page^</a>
+    </footer>
+</html>
