@@ -64,21 +64,27 @@ li {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+#About {
+    background: url(https://wallpapercave.com/wp/56VQwky.jpg) center center;
+    color: white;
+}
 #About:hover { 
-    background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif);
+    background: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)no-repeat center center fixed;
     display: block;
     margin: auto;
     width: 40%;
     color: white;
+
 }    
 .absolute {
-        position: absolute;
-        top: 0;
-        left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     }
-    #bgimg{
-        width: 100vw;
-        z-index: -1;
+#bgimg{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
     }
 #projects {
     background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Nu2DDaj5gikp4kjij/animated-abstract-orange-background-blurred-lights-bokeh-effect_hjpwmq3yl_thumbnail-full13.png);
@@ -88,7 +94,21 @@ li {
     background-image: url(http://www.hdwallpapersfreedownload.com/uploads/large/3d-and-abstract/purple-abstract-wallpapers-hd.jpg);
     Color: white;
 }
-
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	margin-left: 25%;
+	margin-right:25%;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 </style>
 <html lang="en">
 <head>
@@ -117,11 +137,11 @@ li {
                     <li class="nav-item active"><a class="nav-link" href="#About">About</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#projects">Projects</a> </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Section 3</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Career Devs</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#Section3-a">Section 3-a</a>
-                            <a class="dropdown-item" href="#Section3-b">Section 3-b</a>
-                            <a class="dropdown-item" href="#Section3-c">Section 3-c</a>
+                            <a class="dropdown-item" href="#Section3-a">Arnell</a>
+                            <a class="dropdown-item" href="#Section3-b">The Gang</a>
+                            <a class="dropdown-item" href="#Section3-c">Me</a>
                        </div>
                     </li>
                 </ul>
@@ -135,26 +155,24 @@ li {
             </button>
     </nav>
         </div>
-    <div id="About" style="height:500px;background-color: tan; margin-top:80px; text-align:center; margin-left:33%; margin-right:33%">
+    <div id="About" style="height: 500px; margin-top:80px; text-align:center; margin-left:33%; margin-right:33%">
         <h1>About</h1>
         <p>Hi, my name is Sean Cahill. I used to be a computer technician, now I have started my journey into the world of programing. I'm still new to the game but im learning quick.</p>
     </div>
-    <div id="projects" style="height: 500px; text-align:center">
-        <h2>Projects</h2>
+    <div id="projects" style="text-align:center">
+        <h1>Projects</h1>
         <p>Here are my recent and upcoming Projects</p>
         <div class="row">
-  <div class="col">Tribute Page<a href="https://preview.c9users.io/seancahill25/tribute-page/htmldemo/1hrpage/1hrPage.html?_c9_id=livepreview2&_c9_host=https://ide.c9.ioTribute Page"><img src="https://www166.lunapic.com/do-not-link-here-use-hosting-instead/150994402536453?9633193943"></a></div>
-  <div class="col; img-responsive">Upcoming Project<img src="http://via.placeholder.com/350x350"></div>
-  <div class="col">Upcoming Project<img src="http://via.placeholder.com/350x350"></div>
+  <div class="col">Tribute Page<a href="https://preview.c9users.io/seancahill25/tribute-page/htmldemo/1hrpage/1hrPage.html?_c9_id=livepreview2&_c9_host=https://ide.c9.ioTribute Page"><img class="img-fluid" src="https://www166.lunapic.com/do-not-link-here-use-hosting-instead/150994402536453?9633193943"></a></div>
+  <div class="col">Upcoming Project<img class="img-fluid" src="http://via.placeholder.com/350x350"></div>
+  <div class="col">Upcoming Project<img class="img-fluid" src="http://via.placeholder.com/350x350"></div>
 </div>
     </div>
-    <div id="Section3" style="height: 500px; text-align:center">
-        <h3 id="Section3-a" style="height: 100px">Section 3-a</h3>
-        <p>This is my Section 3 text.</p>
-        <h4 id="Section3-b" style="height: 100px">Section 3-b</h4>
-        <p>This is my Section 3-b text.</p>
-        <h5 id="Section3-c" style="height: 100px">Section 3-c</h5>
-        <p>This is my Section 3-c text.</p>
+    <div id="Section3" style=" text-align:center">
+        <h1 id="Section3-a">Career Devs </h1>
+        <h1><div class="videoWrapper"><iframe src="https://www.youtube.com/embed/hYv_tQDG3H4?ecver=2" width="641" height="360" frameborder="0" gesture="media" allowfullscreen></iframe></div>Arnell</h1>
+        <h1 id="Section3-b"><img class="img-fluid" src="The Class.PNG">The Gang</h1>
+        <h1 id="Section3-c"><img class="img-fluid rounded-circle" src="https://www141.lunapic.com/do-not-link-here-use-hosting-instead/151001439855454?5715533034">Me</h1>
     </div>
 </body>
     <footer>
